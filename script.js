@@ -6,7 +6,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const mensagem = document.getElementById('mensagem').value.trim();
 
     if (nome && email && mensagem) {
-        const whatsappNumber = '119988463093';
+        const whatsappNumber = '11988463093';
         const message = `Nome: ${encodeURIComponent(nome)}%0AEmail: ${encodeURIComponent(email)}%0AMensagem: ${encodeURIComponent(mensagem)}`;
         const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
 
